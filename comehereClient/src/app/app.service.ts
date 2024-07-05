@@ -10,7 +10,7 @@ export class AppService {
 
   public getFontFamily(): Observable<any> {
     return this.httpclient.get(
-      'https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyA2NeyaU_iGuS4IDFGZaLOhMwBFgPGYzQs'
+      'https://www.googleapis.com/webfonts/v1/webfonts?key=yourapikey'
     );
   }
 }
