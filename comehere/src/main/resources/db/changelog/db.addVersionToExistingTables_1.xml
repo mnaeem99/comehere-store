@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+         
+		<changeSet author="comehere, Inc" id="orders100">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="orders" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="orders">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="userspreference101">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="userspreference" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="userspreference">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="products102">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="products" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="products">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="order_items103">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="order_items" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="order_items">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="jwt_entity104">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="jwt_entity" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="jwt_entity">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="rolepermission105">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="rolepermission" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="rolepermission">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="users106">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="users" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="users">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="role107">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="role" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="role">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="tokenverification108">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="tokenverification" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="tokenverification">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="suppliers109">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="suppliers" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="suppliers">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="customers110">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="customers" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="customers">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="permission111">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="permission" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="permission">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="usersrole112">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="usersrole" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="usersrole">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="userspermission113">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="userspermission" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="userspermission">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+	<changeSet author="comehere, Inc" id="inventory114">
+	    <preConditions onFail="MARK_RAN">
+        	<tableExists tableName="inventory" schemaName="public"/>
+        </preConditions>
+	    <addColumn tableName="inventory">
+	    	<column name="versiono" type="BIGINT" defaultValue="0">
+	      		<constraints nullable="false"/>
+			</column>
+	   	</addColumn>
+	</changeSet>
+         
+</databaseChangeLog>
